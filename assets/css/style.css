@@ -91,7 +91,7 @@ Header Section
 .portrait .box-note {
   position: relative;
   max-width: 350px;
-  margin: 30px auto;
+  margin: 20px 0px 5px 0px;
   background: #249ebd;
   padding: 10px 15px;
   color: white;
@@ -108,7 +108,6 @@ Header Section
   bottom: -10px;
 }
 .portrait .portrait-img-area {
-  width: 160px;
   margin: 0 auto;
   position: relative;
 }
@@ -714,13 +713,6 @@ Main Section Section
   font-size: 14px;
 }
 /* End Stlye wrapper for blog content section*/
-#contact .map-area {
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  min-height: 450px;
-  background: url(../images/loader.gif) no-repeat center center;
-}
 #contact .map-area #map {
   min-height: 450px;
   width: 100%;
@@ -982,9 +974,9 @@ a.configuration {
   top: 70px;
   background: white;
   color: #005580;
-  padding: 5px 15px;
-  font-size: 12px;
-  width: 40px;
+  padding: 5px 0px;
+  font-size: 10px;
+  width: 10px;
   z-index: 10;
   height: 34px;
   overflow: hidden;

@@ -13,8 +13,6 @@ $(document).ready(function() {
 function init_modal_optional() {
   if ($('.ajax_link').length > 0) {
     $('.ajax_link').click(function(e) {
-      var html = $(this).attr("href");
-      $('#modal').html("").load(html);
       $('#modal').modal('show');
       return false;
     });
@@ -32,9 +30,6 @@ function init_btn_love() {
 function init_plugins() {
   $('[data-toggle=tooltip]').tooltip();
   $('#portfolio-grid').mixitup();
-  $("#navigation").autofix_anything({
-    onlyInContainer: true
-  });
   $('.image-popup').magnificPopup({type: 'image', preloader: true});
   $('.popup-iframe').magnificPopup({
     disableOn: 700,
@@ -86,9 +81,6 @@ function init_nav_event() {
       scrollTop: $('#main-content').offset().top
     }, 600, function() {
     });
-    if ($(this).data('menu') == "contact") {
-      init_gmap();
-    }
     location.hash = $(this).attr('href');
     return false;
   });
@@ -119,9 +111,6 @@ function init_check_hash() {
         }, 600, function() {
         });
       });
-      if (window.location.hash == "#contact") {
-        init_gmap();
-      }
     }
   }
 }
@@ -137,30 +126,15 @@ function theme_option(selector) {
   return false;
 }
 
-function init_gmap() {
-  $('.map-area #map').remove();
-  $('.map-area').append('<div id="map"></div>');
-  setTimeout(function() {
-    $('#map').gmap3({
-      action: 'init',
-      marker: {
-        address: "Haltern am See, Weseler Str. 151",
-        options: {
-          icon: new google.maps.MarkerImage("./assets/images/marker.png")
-        }
-      },
-      map: {
-        options: {
-          zoom: 14
-        }
-      }
-    });
-  }, 2000);
-}
-
 $(window).load(function() {
   $('.imgWrapper img').animate({opacity: '1.0'}, 1000, function() {
     $(this).css('filter', 'none');
+  });
+  $('.img-arrow, #main-content').fadeIn();
+  $('.navigation-list a[href="#about"]').tab('show')
+  $("html,body").animate({
+    scrollTop: $('#main-content').offset().top
+  }, 600, function() {
   });
 });
 
