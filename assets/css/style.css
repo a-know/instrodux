@@ -91,7 +91,7 @@ Header Section
 .portrait .box-note {
   position: relative;
   max-width: 350px;
-  margin: 20px 0px 5px 0px;
+  margin: 20px auto 5px auto;
   background: #249ebd;
   padding: 10px 15px;
   color: white;
@@ -159,7 +159,6 @@ Main Section Section
 }
 .content {
   background: white;
-  padding-top: 80px;
   box-shadow: 0 10px 0 #36546d;
 }
 /* end content section */
@@ -765,7 +764,7 @@ Main Section Section
   font-weight: 700;
 }
 .title.with-icon {
-  padding-left: 50px;
+  text-align: center;
 }
 .title .icn-title {
   margin-right: 5px;
