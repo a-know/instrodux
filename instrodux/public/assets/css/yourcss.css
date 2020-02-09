@@ -1,0 +1,55 @@
+.portrait .portrait-img-area .avatar {
+    margin: 15px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+}
+
+.identity-area {
+    text-align: left;
+}
+
+.col-md-6 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.gage-avatar {
+    margin: 15px;
+}
+
+.gage-portrait-img-area {
+    text-align: center;
+}
+
+.gage-name {
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gage-name-small {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.gage2-block {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.info-map {
+    right: 0;
+    bottom: 0;
+    min-height: 150px;
+    width: 100%;
+    z-index: 3;
+    max-width: 300px;
+    padding: 20px;
+    background: #f2f2f2;
+}
