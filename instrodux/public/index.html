@@ -35,97 +35,10 @@
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1">
             <!-- === ヘッダー === -->
-            <header class="portrait">
-              <div class="bg-line"></div>
-              <div class="body-portrait">
-
-                <!-- =========
-                Start Note Slider
-                ===================================-->
-                <div class="box-note">
-                  <div id="slider-note">
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        instax mini Link で自己紹介！
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- =========
-                End Note Slider
-                ===================================-->
-
-                <!-- =========
-                Start portrait image Section
-                ===================================-->
-                <div class="portrait-img-area">
-                  <img src="assets/images/avatar.png" alt="avatar" class="avatar"/>
-                  <div class="profile-links">
-                  </div>
-                </div>
-                <!-- =========
-                End  portrait image Section
-                ===================================-->
-
-                <!-- =========
-                Start Show Yor Name Section
-                ===================================-->
-                <h1 class="name">Instrodux<small>instax ✖ Introduction<hr>「はじめまして」を、<br>てのひらサイズで。</small></h1>
-                
-                <div class="deviter"></div>
-                <h6>このサービス・Webサイトはスマートフォン端末でのご利用のみを想定し、サポートしています。</h6>
-                <!-- =========
-                Start Show Yor Name Section
-                ===================================-->
-
-              </div>
-            </header>
+            <div id="dom-header"></div>
 
             <!-- === ベーシック === -->
-            <div class="portrait">
-              <div class="bg-line"></div>
-              <div class="body-portrait">
-
-                <!-- =========
-                Start Note Slider
-                ===================================-->
-                <div class="box-note">
-                  <div id="slider-note">
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        こんにちは！<br>a-know（えいのう）です！
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- =========
-                End Note Slider
-                ===================================-->
-
-                <!-- =========
-                Start portrait image Section
-                ===================================-->
-                <div class="portrait-img-area">
-                  <img src="assets/images/avatar.png" alt="avatar" class="avatar"/>
-                  <div class="profile-links">
-                  </div>
-                </div>
-                <!-- =========
-                End  portrait image Section
-                ===================================-->
-
-                <!-- =========
-                Start Show Yor Name Section
-                ===================================-->
-                <h1 class="name">a-know<small>Customer Reliability Engineer</small></h1>
-                <div class="deviter"></div>
-                <h5>はてな という会社で Mackerel というサーバー監視SaaSプロダクトのお仕事をしています。<br>よろしくおねがいします！！</h5>
-                <!-- =========
-                Start Show Yor Name Section
-                ===================================-->
-
-              </div>
-            </div>
+            <div id="dom-basic"></div>
 
             <br>
             <br>
@@ -451,49 +364,10 @@
     End Wrapper Page
     ===================================-->
 
-    <!-- =========
-    Text Showup Wait Document Ready
-    ===================================-->
-    <div id="wait-page" class="text-center">Loading...</div>
-
-    <!-- =========
-    Link Config Custom styles
-    ===================================-->
+    <div id="dom-loading"></div>
 
     <a class="configuration ajax_link"><i class="fa fa-cog"></i> Configuration</a>
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-            <h4 class="modal-title bold">Background Options</h4>
-          </div>
-          <div class="modal-body">
-            <form >
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="FullnameForm">Fullname</label>
-                    <input type="text" class="form-control" id="FullnameForm" placeholder="Enter Fullname">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="CompanyForm">Company</label>
-                    <input type="text" class="form-control" id="CompanyForm" placeholder="Enter Company">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="MesageForm">Message</label>
-                <textarea class="form-control" rows="8" id="MesageForm" placeholder="Enter Message"></textarea>
-              </div>
-            </form>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->    
-    </div>
-
+    <div id="dom-config"></div>
 
     <!-- =========
     Javascript load 
