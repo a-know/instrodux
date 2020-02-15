@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+function mappingState(state) {
+    return state;
+}
 
 class Config extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
@@ -16,7 +25,7 @@ class Config extends Component {
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="FullnameForm">Fullname</label>
-                                            <input type="text" class="form-control" id="FullnameForm" placeholder="Enter Fullname" />
+                                            <FormName />
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -38,5 +47,30 @@ class Config extends Component {
         );
     }
 }
+Config = connect()(Config);
+
+class FormName extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                name: e.target.value,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.name} onChange={this.doChange} />
+        )
+    }
+}
+
+FormName = connect(mappingState)(FormName);
 
 export default Config;

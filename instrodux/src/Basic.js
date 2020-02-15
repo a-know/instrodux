@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+function mappingState(state) {
+    return state;
+}
 
 class Basic extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <div class="portrait">
@@ -20,7 +29,7 @@ class Basic extends Component {
                   <div class="profile-links">
                   </div>
                 </div>
-                <h1 class="name">a-know<small>Customer Reliability Engineer</small></h1>
+                <h1 class="name"><InputName /><small>Customer Reliability Engineer</small></h1>
                 <div class="deviter"></div>
                 <h5>はてな という会社で Mackerel というサーバー監視SaaSプロダクトのお仕事をしています。<br />よろしくおねがいします！！</h5>
               </div>
@@ -28,5 +37,17 @@ class Basic extends Component {
         );
     }
 }
+
+Basic = connect()(Basic);
+
+class InputName extends Component {
+    render() {
+        return (
+            <p>{this.props.name}</p>
+        );
+    }
+}
+
+InputName = connect(mappingState)(InputName);
 
 export default Basic;
