@@ -15,23 +15,17 @@ class Config extends Component {
             <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-                            <h4 class="modal-title bold">Background Options</h4>
-                        </div>
                         <div class="modal-body">
                             <form>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="FullnameForm">Fullname</label>
                                             <FormName />
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="CompanyForm">Company</label>
-                                            <input type="text" class="form-control" id="CompanyForm" placeholder="Enter Company" />
+                                            <FormTitle />
                                         </div>
                                     </div>
                                 </div>
@@ -60,6 +54,7 @@ class FormName extends Component {
             {
                 type: 'EDIT',
                 name: e.target.value,
+                title: this.props.title,
             }
         );
     }
@@ -72,5 +67,30 @@ class FormName extends Component {
 }
 
 FormName = connect(mappingState)(FormName);
+
+class FormTitle extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                name: this.props.name,
+                title: e.target.value,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="CompanyForm" value={this.props.title} onChange={this.doChange} />
+        )
+    }
+}
+
+FormTitle = connect(mappingState)(FormTitle);
 
 export default Config;

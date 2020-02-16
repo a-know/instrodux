@@ -10,13 +10,15 @@ import * as serviceWorker from './serviceWorker';
 
 let introduction_state = {
     name: "a-know",
+    title: "Software Developer",
 }
 
 function edit(state = introduction_state, action) {
     switch (action.type) {
         case 'EDIT':
             return {
-                name: action.name
+                name: action.name,
+                title: action.title,
             };
         default:
             return state;
