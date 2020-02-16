@@ -32,6 +32,13 @@ class Config extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <FormAvatar />
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -53,6 +60,7 @@ class FormBubble extends Component {
             {
                 type: 'EDIT',
                 bubble: e.target.value,
+                avatar: this.props.avatar,
                 name: this.props.name,
                 title: this.props.title,
             }
@@ -68,6 +76,33 @@ class FormBubble extends Component {
 
 FormBubble = connect(mappingState)(FormBubble);
 
+class FormAvatar extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: e.target.avatar,
+                name: this.props.name,
+                title: this.props.title,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.avatar} onChange={this.doChange} />
+        )
+    }
+}
+
+FormAvatar = connect(mappingState)(FormAvatar);
+
 class FormName extends Component {
     constructor(props) {
         super(props);
@@ -78,6 +113,8 @@ class FormName extends Component {
         this.props.dispatch(
             {
                 type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
                 name: e.target.value,
                 title: this.props.title,
             }
@@ -103,6 +140,8 @@ class FormTitle extends Component {
         this.props.dispatch(
             {
                 type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
                 name: this.props.name,
                 title: e.target.value,
             }

@@ -23,7 +23,7 @@ class Basic extends Component {
                   </div>
                 </div>
                 <div class="portrait-img-area">
-                  <img src="assets/images/avatar.png" alt="avatar" class="avatar"/>
+                  <InputAvatar />
                   <div class="profile-links">
                   </div>
                 </div>
@@ -47,6 +47,16 @@ class InputBubble extends Component {
 }
 
 InputBubble = connect(mappingState)(InputBubble);
+
+class InputAvatar extends Component {
+    render() {
+        return (
+            <img src={this.props.avatar} alt="avatar" class="avatar" />
+        );
+    }
+}
+
+InputAvatar = connect(mappingState)(InputAvatar);
 
 class InputName extends Component {
     render() {

@@ -10,6 +10,7 @@ import * as serviceWorker from './serviceWorker';
 
 let introduction_state = {
     bubble: "こんにちは！\na-know（えいのう）です！",
+    avatar: "https://secure.gravatar.com/avatar/6a9380c04ac4778efc300439707c517a?s=200&d=retro",
     name: "a-know",
     title: "Software Developer",
 }

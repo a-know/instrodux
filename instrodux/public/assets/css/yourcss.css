@@ -53,3 +53,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     padding: 20px;
     background: #f2f2f2;
 }
+
+.avatar {
+    border-radius: 100%;
+}
