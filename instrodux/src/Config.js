@@ -17,6 +17,9 @@ class Config extends Component {
                     <div class="modal-content">
                         <div class="modal-body">
                             <form>
+                                <div class="form-group">
+                                    <FormBubble />
+                                </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -29,10 +32,6 @@ class Config extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                  <label for="MesageForm">Message</label>
-                                  <textarea class="form-control" rows="8" id="MesageForm" placeholder="Enter Message"></textarea>
-                                </div>
                             </form>
                         </div>
                     </div>
@@ -42,6 +41,32 @@ class Config extends Component {
     }
 }
 Config = connect()(Config);
+
+class FormBubble extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: e.target.value,
+                name: this.props.name,
+                title: this.props.title,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <textarea class="form-control" rows="2" id="MesageForm" value={this.props.bubble} onChange={this.doChange} ></textarea>
+        )
+    }
+}
+
+FormBubble = connect(mappingState)(FormBubble);
 
 class FormName extends Component {
     constructor(props) {

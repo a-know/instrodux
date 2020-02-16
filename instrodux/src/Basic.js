@@ -18,9 +18,7 @@ class Basic extends Component {
                 <div class="box-note">
                   <div id="slider-note">
                     <div class="carousel-inner">
-                      <div class="item active">
-                        こんにちは！<br />a-know（えいのう）です！
-                      </div>
+                        <InputBubble />
                     </div>
                   </div>
                 </div>
@@ -39,6 +37,16 @@ class Basic extends Component {
 }
 
 Basic = connect()(Basic);
+
+class InputBubble extends Component {
+    render() {
+        return (
+            <div class="item active" style={{whiteSpace: 'pre-line'}}>{this.props.bubble}</div>
+        );
+    }
+}
+
+InputBubble = connect(mappingState)(InputBubble);
 
 class InputName extends Component {
     render() {

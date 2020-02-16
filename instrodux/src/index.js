@@ -9,6 +9,7 @@ import Basic from './Basic'
 import * as serviceWorker from './serviceWorker';
 
 let introduction_state = {
+    bubble: "こんにちは！\na-know（えいのう）です！",
     name: "a-know",
     title: "Software Developer",
 }
@@ -17,6 +18,7 @@ function edit(state = introduction_state, action) {
     switch (action.type) {
         case 'EDIT':
             return {
+                bubble: action.bubble,
                 name: action.name,
                 title: action.title,
             };
