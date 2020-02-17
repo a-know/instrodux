@@ -20,6 +20,7 @@ function edit(state = introduction_state, action) {
         case 'EDIT':
             return {
                 bubble: action.bubble,
+                avatar: action.avatar,
                 name: action.name,
                 title: action.title,
             };

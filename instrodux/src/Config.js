@@ -87,7 +87,7 @@ class FormAvatar extends Component {
             {
                 type: 'EDIT',
                 bubble: this.props.bubble,
-                avatar: e.target.avatar,
+                avatar: e.target.value,
                 name: this.props.name,
                 title: this.props.title,
             }
