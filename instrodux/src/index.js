@@ -13,6 +13,7 @@ let introduction_state = {
     avatar: "https://secure.gravatar.com/avatar/6a9380c04ac4778efc300439707c517a?s=200&d=retro",
     name: "a-know",
     title: "Software Developer",
+    message: "趣味でWebサービスなどを作るのが好きです！\nよろしくお願いします！"
 }
 
 function edit(state = introduction_state, action) {
@@ -23,6 +24,7 @@ function edit(state = introduction_state, action) {
                 avatar: action.avatar,
                 name: action.name,
                 title: action.title,
+                message: action.message,
             };
         default:
             return state;

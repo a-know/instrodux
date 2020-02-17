@@ -29,7 +29,7 @@ class Basic extends Component {
                 </div>
                 <h1 class="name"><InputName /><small><InputTitle /></small></h1>
                 <div class="deviter"></div>
-                <h5>はてな という会社で Mackerel というサーバー監視SaaSプロダクトのお仕事をしています。<br />よろしくおねがいします！！</h5>
+                <InputMessage />
               </div>
             </div>
         );
@@ -77,5 +77,15 @@ class InputTitle extends Component {
 }
 
 InputTitle = connect(mappingState)(InputTitle);
+
+class InputMessage extends Component {
+    render() {
+        return (
+            <h5 style={{whiteSpace: 'pre-line'}}>{this.props.message}</h5>
+        );
+    }
+}
+
+InputMessage = connect(mappingState)(InputMessage);
 
 export default Basic;

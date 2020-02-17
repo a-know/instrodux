@@ -39,6 +39,9 @@ class Config extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <FormMessage />
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -156,5 +159,33 @@ class FormTitle extends Component {
 }
 
 FormTitle = connect(mappingState)(FormTitle);
+
+class FormMessage extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: e.target.value,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <textarea class="form-control" rows="2" id="MesageForm" value={this.props.message} onChange={this.doChange} ></textarea>
+        )
+    }
+}
+
+FormMessage = connect(mappingState)(FormMessage);
 
 export default Config;
