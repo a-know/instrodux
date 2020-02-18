@@ -42,6 +42,18 @@ class Config extends Component {
                                 <div class="form-group">
                                     <FormMessage />
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <FormColumnLabel1 />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <FormColumnValue1 />
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -66,6 +78,9 @@ class FormBubble extends Component {
                 avatar: this.props.avatar,
                 name: this.props.name,
                 title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
             }
         );
     }
@@ -93,6 +108,9 @@ class FormAvatar extends Component {
                 avatar: e.target.value,
                 name: this.props.name,
                 title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
             }
         );
     }
@@ -120,6 +138,9 @@ class FormName extends Component {
                 avatar: this.props.avatar,
                 name: e.target.value,
                 title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
             }
         );
     }
@@ -147,6 +168,9 @@ class FormTitle extends Component {
                 avatar: this.props.avatar,
                 name: this.props.name,
                 title: e.target.value,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
             }
         );
     }
@@ -175,6 +199,8 @@ class FormMessage extends Component {
                 name: this.props.name,
                 title: this.props.title,
                 message: e.target.value,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
             }
         );
     }
@@ -187,5 +213,65 @@ class FormMessage extends Component {
 }
 
 FormMessage = connect(mappingState)(FormMessage);
+
+class FormColumnLabel1 extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: e.target.value,
+                columnvalue1: this.props.columnvalue1,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.columnlabel1} onChange={this.doChange} />
+        )
+    }
+}
+
+FormColumnLabel1 = connect(mappingState)(FormColumnLabel1);
+
+class FormColumnValue1 extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: e.target.value,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.columnvalue1} onChange={this.doChange} />
+        )
+    }
+}
+
+FormColumnValue1 = connect(mappingState)(FormColumnValue1);
 
 export default Config;
