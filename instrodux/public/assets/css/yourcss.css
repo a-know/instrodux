@@ -17,6 +17,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 .gage-avatar {
     margin: 15px;
+    width: 140px;
 }
 
 .gage-portrait-img-area {

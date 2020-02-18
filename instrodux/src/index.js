@@ -9,6 +9,7 @@ import Basic from './Basic'
 import Business from './Business'
 import Forcus from './Forcus'
 import Gauge1 from './Gauge1'
+import Gauge2 from './Gauge2'
 import * as serviceWorker from './serviceWorker';
 
 let introduction_state = {
@@ -92,5 +93,6 @@ ReactDOM.render(<Provider store={store}><Basic /></Provider>, document.getElemen
 ReactDOM.render(<Provider store={store}><Business /></Provider>, document.getElementById('dom-business'));
 ReactDOM.render(<Provider store={store}><Forcus /></Provider>, document.getElementById('dom-forcus'));
 ReactDOM.render(<Provider store={store}><Gauge1 /></Provider>, document.getElementById('dom-gauge1'));
+ReactDOM.render(<Provider store={store}><Gauge2 /></Provider>, document.getElementById('dom-gauge2'));
 
 serviceWorker.unregister();
