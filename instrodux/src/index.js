@@ -8,6 +8,7 @@ import Config from './Config'
 import Basic from './Basic'
 import Business from './Business'
 import Forcus from './Forcus'
+import Gauge1 from './Gauge1'
 import * as serviceWorker from './serviceWorker';
 
 let introduction_state = {
@@ -31,6 +32,15 @@ let introduction_state = {
     forcuscolumn2: "子守り",
     forcuscolumn3: "早食い",
     forcuscolumn4: "散歩",
+    gaugelabel: "ステータス",
+    gaugecolumnlabel1: "HP",
+    gaugecolumnvalue1: "70",
+    gaugecolumnlabel2: "MP",
+    gaugecolumnvalue2: "40",
+    gaugecolumnlabel3: "ちから",
+    gaugecolumnvalue3: "20",
+    gaugecolumnlabel4: "すばやさ",
+    gaugecolumnvalue4: "30",
 }
 
 function edit(state = introduction_state, action) {
@@ -57,6 +67,15 @@ function edit(state = introduction_state, action) {
                 forcuscolumn2: action.forcuscolumn2,
                 forcuscolumn3: action.forcuscolumn3,
                 forcuscolumn4: action.forcuscolumn4,
+                gaugelabel: action.gaugelabel,
+                gaugecolumnlabel1: action.gaugecolumnlabel1,
+                gaugecolumnvalue1: action.gaugecolumnvalue1,
+                gaugecolumnlabel2: action.gaugecolumnlabel2,
+                gaugecolumnvalue2: action.gaugecolumnvalue2,
+                gaugecolumnlabel3: action.gaugecolumnlabel3,
+                gaugecolumnvalue3: action.gaugecolumnvalue3,
+                gaugecolumnlabel4: action.gaugecolumnlabel4,
+                gaugecolumnvalue4: action.gaugecolumnvalue4,
             };
         default:
             return state;
@@ -72,5 +91,6 @@ ReactDOM.render(<Provider store={store}><Config /></Provider>, document.getEleme
 ReactDOM.render(<Provider store={store}><Basic /></Provider>, document.getElementById('dom-basic'));
 ReactDOM.render(<Provider store={store}><Business /></Provider>, document.getElementById('dom-business'));
 ReactDOM.render(<Provider store={store}><Forcus /></Provider>, document.getElementById('dom-forcus'));
+ReactDOM.render(<Provider store={store}><Gauge1 /></Provider>, document.getElementById('dom-gauge1'));
 
 serviceWorker.unregister();
