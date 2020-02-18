@@ -7,6 +7,7 @@ import Loading from './Loading'
 import Config from './Config'
 import Basic from './Basic'
 import Business from './Business'
+import Forcus from './Forcus'
 import * as serviceWorker from './serviceWorker';
 
 let introduction_state = {
@@ -25,6 +26,11 @@ let introduction_state = {
     columnvalue4: "a-know@example.com",
     columnlabel5: "Website",
     columnvalue5: "https://home.a-know.me/",
+    forcuslabel: "とくいなこと",
+    forcuscolumn1: "早寝早起き",
+    forcuscolumn2: "子守り",
+    forcuscolumn3: "早食い",
+    forcuscolumn4: "散歩",
 }
 
 function edit(state = introduction_state, action) {
@@ -46,6 +52,11 @@ function edit(state = introduction_state, action) {
                 columnvalue4: action.columnvalue4,
                 columnlabel5: action.columnlabel5,
                 columnvalue5: action.columnvalue5,
+                forcuslabel: action.forcuslabel,
+                forcuscolumn1: action.forcuscolumn1,
+                forcuscolumn2: action.forcuscolumn2,
+                forcuscolumn3: action.forcuscolumn3,
+                forcuscolumn4: action.forcuscolumn4,
             };
         default:
             return state;
@@ -60,5 +71,6 @@ ReactDOM.render(<Loading />, document.getElementById('dom-loading'));
 ReactDOM.render(<Provider store={store}><Config /></Provider>, document.getElementById('dom-config'));
 ReactDOM.render(<Provider store={store}><Basic /></Provider>, document.getElementById('dom-basic'));
 ReactDOM.render(<Provider store={store}><Business /></Provider>, document.getElementById('dom-business'));
+ReactDOM.render(<Provider store={store}><Forcus /></Provider>, document.getElementById('dom-forcus'));
 
 serviceWorker.unregister();

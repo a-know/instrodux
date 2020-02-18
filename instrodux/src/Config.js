@@ -102,6 +102,41 @@ class Config extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <FormForcusLabel />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <FormForcusColumn1 />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <FormForcusColumn2 />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <FormForcusColumn3 />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <FormForcusColumn4 />
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -137,6 +172,11 @@ class FormBubble extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -175,6 +215,11 @@ class FormAvatar extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -213,6 +258,11 @@ class FormName extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -251,6 +301,11 @@ class FormTitle extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -289,6 +344,11 @@ class FormMessage extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -327,6 +387,11 @@ class FormColumnLabel1 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -365,6 +430,11 @@ class FormColumnValue1 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -403,6 +473,11 @@ class FormColumnLabel2 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -441,6 +516,11 @@ class FormColumnValue2 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -479,6 +559,11 @@ class FormColumnLabel3 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -517,6 +602,11 @@ class FormColumnValue3 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -555,6 +645,11 @@ class FormColumnLabel4 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -593,6 +688,11 @@ class FormColumnValue4 extends Component {
                 columnvalue4: e.target.value,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -631,6 +731,11 @@ class FormColumnLabel5 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: e.target.value,
                 columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -669,6 +774,11 @@ class FormColumnValue5 extends Component {
                 columnvalue4: this.props.columnvalue4,
                 columnlabel5: this.props.columnlabel5,
                 columnvalue5: e.target.value,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
             }
         );
     }
@@ -681,5 +791,220 @@ class FormColumnValue5 extends Component {
 }
 
 FormColumnValue5 = connect(mappingState)(FormColumnValue5);
+
+class FormForcusLabel extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
+                columnlabel2: this.props.columnlabel2,
+                columnvalue2: this.props.columnvalue2,
+                columnlabel3: this.props.columnlabel3,
+                columnvalue3: this.props.columnvalue3,
+                columnlabel4: this.props.columnlabel4,
+                columnvalue4: this.props.columnvalue4,
+                columnlabel5: this.props.columnlabel5,
+                columnvalue5: this.props.columnvalue5,
+                forcuslabel: e.target.value,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.forcuslabel} onChange={this.doChange} />
+        )
+    }
+}
+
+FormForcusLabel = connect(mappingState)(FormForcusLabel);
+
+class FormForcusColumn1 extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
+                columnlabel2: this.props.columnlabel2,
+                columnvalue2: this.props.columnvalue2,
+                columnlabel3: this.props.columnlabel3,
+                columnvalue3: this.props.columnvalue3,
+                columnlabel4: this.props.columnlabel4,
+                columnvalue4: this.props.columnvalue4,
+                columnlabel5: this.props.columnlabel5,
+                columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: e.target.value,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.forcuscolumn1} onChange={this.doChange} />
+        )
+    }
+}
+
+FormForcusColumn1 = connect(mappingState)(FormForcusColumn1);
+
+class FormForcusColumn2 extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
+                columnlabel2: this.props.columnlabel2,
+                columnvalue2: this.props.columnvalue2,
+                columnlabel3: this.props.columnlabel3,
+                columnvalue3: this.props.columnvalue3,
+                columnlabel4: this.props.columnlabel4,
+                columnvalue4: this.props.columnvalue4,
+                columnlabel5: this.props.columnlabel5,
+                columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: e.target.value,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.forcuscolumn2} onChange={this.doChange} />
+        )
+    }
+}
+
+FormForcusColumn2 = connect(mappingState)(FormForcusColumn2);
+
+class FormForcusColumn3 extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
+                columnlabel2: this.props.columnlabel2,
+                columnvalue2: this.props.columnvalue2,
+                columnlabel3: this.props.columnlabel3,
+                columnvalue3: this.props.columnvalue3,
+                columnlabel4: this.props.columnlabel4,
+                columnvalue4: this.props.columnvalue4,
+                columnlabel5: this.props.columnlabel5,
+                columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: e.target.value,
+                forcuscolumn4: this.props.forcuscolumn4,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.forcuscolumn3} onChange={this.doChange} />
+        )
+    }
+}
+
+FormForcusColumn3 = connect(mappingState)(FormForcusColumn3);
+
+class FormForcusColumn4 extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
+                columnlabel2: this.props.columnlabel2,
+                columnvalue2: this.props.columnvalue2,
+                columnlabel3: this.props.columnlabel3,
+                columnvalue3: this.props.columnvalue3,
+                columnlabel4: this.props.columnlabel4,
+                columnvalue4: this.props.columnvalue4,
+                columnlabel5: this.props.columnlabel5,
+                columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: e.target.value,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="FullnameForm" value={this.props.forcuscolumn4} onChange={this.doChange} />
+        )
+    }
+}
+
+FormForcusColumn4 = connect(mappingState)(FormForcusColumn4);
 
 export default Config;
