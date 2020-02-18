@@ -17,6 +17,14 @@ let introduction_state = {
     message: "趣味でWebサービスなどを作るのが好きです！\nよろしくお願いします！",
     columnlabel1: "所属",
     columnvalue1: "株式会社はてな",
+    columnlabel2: "住所",
+    columnvalue2: "岡山県倉敷市",
+    columnlabel3: "TEL",
+    columnvalue3: "123-4567-8901",
+    columnlabel4: "EMail",
+    columnvalue4: "a-know@example.com",
+    columnlabel5: "Website",
+    columnvalue5: "https://home.a-know.me/",
 }
 
 function edit(state = introduction_state, action) {
@@ -30,6 +38,14 @@ function edit(state = introduction_state, action) {
                 message: action.message,
                 columnlabel1: action.columnlabel1,
                 columnvalue1: action.columnvalue1,
+                columnlabel2: action.columnlabel2,
+                columnvalue2: action.columnvalue2,
+                columnlabel3: action.columnlabel3,
+                columnvalue3: action.columnvalue3,
+                columnlabel4: action.columnlabel4,
+                columnvalue4: action.columnvalue4,
+                columnlabel5: action.columnlabel5,
+                columnvalue5: action.columnvalue5,
             };
         default:
             return state;

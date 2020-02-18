@@ -28,20 +28,20 @@ class Business extends Component {
                         <InputColumnValue1 />
                       </div>
                       <div class="row">
-                        <div class="col-sm-4"><label>住所</label></div>
-                        <div class="col-sm-8"> 東京都港区南青山</div>
+                        <InputColumnLabel2 />
+                        <InputColumnValue2 />
                       </div>
                       <div class="row">
-                        <div class="col-sm-4"><label>TEL</label></div>
-                        <div class="col-sm-8"> 0120-444-444</div>
+                        <InputColumnLabel3 />
+                        <InputColumnValue3 />
                       </div>
                       <div class="row">
-                        <div class="col-sm-4"><label>Email</label></div>
-                        <div class="col-sm-8"> a-know@example.com</div>
+                        <InputColumnLabel4 />
+                        <InputColumnValue4 />
                       </div>
                       <div class="row">
-                        <div class="col-sm-4"><label>Website</label></div>
-                        <div class="col-sm-8"> https://home.a-know.me/</div>
+                        <InputColumnLabel5 />
+                        <InputColumnValue5 />
                       </div>
                     </div>
                   </div>
@@ -103,5 +103,85 @@ class InputColumnValue1 extends Component {
 }
 
 InputColumnValue1 = connect(mappingState)(InputColumnValue1);
+
+class InputColumnLabel2 extends Component {
+    render() {
+        return (
+            <div class="col-sm-4"><label>{this.props.columnlabel2}</label></div>
+        );
+    }
+}
+
+InputColumnLabel2 = connect(mappingState)(InputColumnLabel2);
+
+class InputColumnValue2 extends Component {
+    render() {
+        return (
+            <div class="col-sm-8">{this.props.columnvalue2}</div>
+        );
+    }
+}
+
+InputColumnValue2 = connect(mappingState)(InputColumnValue2);
+
+class InputColumnLabel3 extends Component {
+    render() {
+        return (
+            <div class="col-sm-4"><label>{this.props.columnlabel3}</label></div>
+        );
+    }
+}
+
+InputColumnLabel3 = connect(mappingState)(InputColumnLabel3);
+
+class InputColumnValue3 extends Component {
+    render() {
+        return (
+            <div class="col-sm-8">{this.props.columnvalue3}</div>
+        );
+    }
+}
+
+InputColumnValue3 = connect(mappingState)(InputColumnValue3);
+
+class InputColumnLabel4 extends Component {
+    render() {
+        return (
+            <div class="col-sm-4"><label>{this.props.columnlabel4}</label></div>
+        );
+    }
+}
+
+InputColumnLabel4 = connect(mappingState)(InputColumnLabel4);
+
+class InputColumnValue4 extends Component {
+    render() {
+        return (
+            <div class="col-sm-8">{this.props.columnvalue4}</div>
+        );
+    }
+}
+
+InputColumnValue4 = connect(mappingState)(InputColumnValue4);
+
+class InputColumnLabel5 extends Component {
+    render() {
+        return (
+            <div class="col-sm-4"><label>{this.props.columnlabel5}</label></div>
+        );
+    }
+}
+
+InputColumnLabel5 = connect(mappingState)(InputColumnLabel5);
+
+class InputColumnValue5 extends Component {
+    render() {
+        return (
+            <div class="col-sm-8">{this.props.columnvalue5}</div>
+        );
+    }
+}
+
+InputColumnValue5 = connect(mappingState)(InputColumnValue5);
 
 export default Business;
