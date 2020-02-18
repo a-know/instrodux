@@ -192,6 +192,18 @@ class Config extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <FormSocialLabel />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <FormSocialLink />
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -241,6 +253,8 @@ class FormBubble extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -293,6 +307,8 @@ class FormAvatar extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -345,6 +361,8 @@ class FormName extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -397,6 +415,8 @@ class FormTitle extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -449,6 +469,8 @@ class FormMessage extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -501,6 +523,8 @@ class FormColumnLabel1 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -553,6 +577,8 @@ class FormColumnValue1 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -605,6 +631,8 @@ class FormColumnLabel2 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -657,6 +685,8 @@ class FormColumnValue2 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -709,6 +739,8 @@ class FormColumnLabel3 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -761,6 +793,8 @@ class FormColumnValue3 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -813,6 +847,8 @@ class FormColumnLabel4 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -865,6 +901,8 @@ class FormColumnValue4 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -917,6 +955,8 @@ class FormColumnLabel5 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -969,6 +1009,8 @@ class FormColumnValue5 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1021,6 +1063,8 @@ class FormForcusLabel extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1073,6 +1117,8 @@ class FormForcusColumn1 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1125,6 +1171,8 @@ class FormForcusColumn2 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1177,6 +1225,8 @@ class FormForcusColumn3 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1229,6 +1279,8 @@ class FormForcusColumn4 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1281,6 +1333,8 @@ class FormGaugeLabel extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1333,6 +1387,8 @@ class FormGaugeColumnLabel1 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1385,6 +1441,8 @@ class FormGaugeColumnValue1 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1437,6 +1495,8 @@ class FormGaugeColumnLabel2 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1489,6 +1549,8 @@ class FormGaugeColumnValue2 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1541,6 +1603,8 @@ class FormGaugeColumnLabel3 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1593,6 +1657,8 @@ class FormGaugeColumnValue3 extends Component {
                 gaugecolumnvalue3: e.target.value,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1645,6 +1711,8 @@ class FormGaugeColumnLabel4 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: e.target.value,
                 gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1697,6 +1765,8 @@ class FormGaugeColumnValue4 extends Component {
                 gaugecolumnvalue3: this.props.gaugecolumnvalue3,
                 gaugecolumnlabel4: this.props.gaugecolumnlabel4,
                 gaugecolumnvalue4: e.target.value,
+                sociallabel: this.props.sociallabel,
+                sociallink: this.props.sociallink,
             }
         );
     }
@@ -1709,5 +1779,113 @@ class FormGaugeColumnValue4 extends Component {
 }
 
 FormGaugeColumnValue4 = connect(mappingState)(FormGaugeColumnValue4);
+
+class FormSocialLabel extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
+                columnlabel2: this.props.columnlabel2,
+                columnvalue2: this.props.columnvalue2,
+                columnlabel3: this.props.columnlabel3,
+                columnvalue3: this.props.columnvalue3,
+                columnlabel4: this.props.columnlabel4,
+                columnvalue4: this.props.columnvalue4,
+                columnlabel5: this.props.columnlabel5,
+                columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
+                gaugelabel: this.props.gaugelabel,
+                gaugecolumnlabel1: this.props.gaugecolumnlabel1,
+                gaugecolumnvalue1: this.props.gaugecolumnvalue1,
+                gaugecolumnlabel2: this.props.gaugecolumnlabel2,
+                gaugecolumnvalue2: this.props.gaugecolumnvalue2,
+                gaugecolumnlabel3: this.props.gaugecolumnlabel3,
+                gaugecolumnvalue3: this.props.gaugecolumnvalue3,
+                gaugecolumnlabel4: this.props.gaugecolumnlabel4,
+                gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: e.target.value,
+                sociallink: this.props.sociallink,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="CompanyForm" value={this.props.sociallabel} onChange={this.doChange} />
+        )
+    }
+}
+
+FormSocialLabel = connect(mappingState)(FormSocialLabel);
+
+class FormSocialLink extends Component {
+    constructor(props) {
+        super(props);
+        this.doChange = this.doChange.bind(this);
+    }
+
+    doChange(e){
+        this.props.dispatch(
+            {
+                type: 'EDIT',
+                bubble: this.props.bubble,
+                avatar: this.props.avatar,
+                name: this.props.name,
+                title: this.props.title,
+                message: this.props.message,
+                columnlabel1: this.props.columnlabel1,
+                columnvalue1: this.props.columnvalue1,
+                columnlabel2: this.props.columnlabel2,
+                columnvalue2: this.props.columnvalue2,
+                columnlabel3: this.props.columnlabel3,
+                columnvalue3: this.props.columnvalue3,
+                columnlabel4: this.props.columnlabel4,
+                columnvalue4: this.props.columnvalue4,
+                columnlabel5: this.props.columnlabel5,
+                columnvalue5: this.props.columnvalue5,
+                forcuslabel: this.props.forcuslabel,
+                forcuscolumn1: this.props.forcuscolumn1,
+                forcuscolumn2: this.props.forcuscolumn2,
+                forcuscolumn3: this.props.forcuscolumn3,
+                forcuscolumn4: this.props.forcuscolumn4,
+                gaugelabel: this.props.gaugelabel,
+                gaugecolumnlabel1: this.props.gaugecolumnlabel1,
+                gaugecolumnvalue1: this.props.gaugecolumnvalue1,
+                gaugecolumnlabel2: this.props.gaugecolumnlabel2,
+                gaugecolumnvalue2: this.props.gaugecolumnvalue2,
+                gaugecolumnlabel3: this.props.gaugecolumnlabel3,
+                gaugecolumnvalue3: this.props.gaugecolumnvalue3,
+                gaugecolumnlabel4: this.props.gaugecolumnlabel4,
+                gaugecolumnvalue4: this.props.gaugecolumnvalue4,
+                sociallabel: this.props.sociallabel,
+                sociallink: e.target.value,
+            }
+        );
+    }
+
+    render() {
+        return (
+            <input type="text" class="form-control" id="CompanyForm" value={this.props.sociallink} onChange={this.doChange} />
+        )
+    }
+}
+
+FormSocialLink = connect(mappingState)(FormSocialLink);
 
 export default Config;

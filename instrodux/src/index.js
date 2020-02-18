@@ -10,6 +10,7 @@ import Business from './Business'
 import Forcus from './Forcus'
 import Gauge1 from './Gauge1'
 import Gauge2 from './Gauge2'
+import Social from './Social'
 import * as serviceWorker from './serviceWorker';
 
 let introduction_state = {
@@ -42,6 +43,8 @@ let introduction_state = {
     gaugecolumnvalue3: "20",
     gaugecolumnlabel4: "すばやさ",
     gaugecolumnvalue4: "30",
+    sociallabel: "Scan me!!",
+    sociallink: "https://home.a-know.me/"
 }
 
 function edit(state = introduction_state, action) {
@@ -77,6 +80,8 @@ function edit(state = introduction_state, action) {
                 gaugecolumnvalue3: action.gaugecolumnvalue3,
                 gaugecolumnlabel4: action.gaugecolumnlabel4,
                 gaugecolumnvalue4: action.gaugecolumnvalue4,
+                sociallabel: action.sociallabel,
+                sociallink: action.sociallink,
             };
         default:
             return state;
@@ -94,5 +99,6 @@ ReactDOM.render(<Provider store={store}><Business /></Provider>, document.getEle
 ReactDOM.render(<Provider store={store}><Forcus /></Provider>, document.getElementById('dom-forcus'));
 ReactDOM.render(<Provider store={store}><Gauge1 /></Provider>, document.getElementById('dom-gauge1'));
 ReactDOM.render(<Provider store={store}><Gauge2 /></Provider>, document.getElementById('dom-gauge2'));
+ReactDOM.render(<Provider store={store}><Social /></Provider>, document.getElementById('dom-social'));
 
 serviceWorker.unregister();
