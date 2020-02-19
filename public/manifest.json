@@ -11,6 +11,16 @@
       "src": "inst-icon.png",
       "type": "image/png",
       "sizes": "128x128"
+    },
+    {
+      "src": "inst-icon256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "inst-icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/",
