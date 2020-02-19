@@ -21,7 +21,7 @@ class Header extends Component {
                   <div class="profile-links"></div>
                 </div>
 
-                <h1 class="name">Instrodux<small>instax ✖ Introduction<hr />「はじめまして」を、<br />てのひらサイズで。</small></h1>
+                <h1 class="service-name name">「はじめまして」を、<br />てのひらサイズで。<hr /><small>instax mini Link<br />✖<br />Introduction</small></h1>
                 <div class="deviter"></div>
                 <h6>このサービス・Webサイトはスマートフォン端末でのご利用のみを想定し、サポートしています。</h6>
               </div>

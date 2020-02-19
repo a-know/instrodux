@@ -25,7 +25,7 @@ class Gauge2 extends Component {
                       <div class="col-md-4">
                         <InputGaugeLabel />
                         <div class="box-block gage2-block">
-                          <ul class="list-unstyled list-points-progress">
+                          <ul class="list-unstyled list-points-progress ul-gauge2">
                             <li>
                               <InputGaugeColumnLabel1 />
                               <InputGaugeColumnValue1 />
@@ -37,6 +37,10 @@ class Gauge2 extends Component {
                             <li>
                               <InputGaugeColumnLabel3 />
                               <InputGaugeColumnValue3 />
+                            </li>
+                            <li>
+                              <InputGaugeColumnLabel4 />
+                              <InputGaugeColumnValue4 />
                             </li>
                           </ul>
                         </div>
@@ -85,7 +89,7 @@ InputTitle = connect(mappingState)(InputTitle);
 class InputGaugeLabel extends Component {
     render() {
         return (
-            <h3 class="title with-icon">{this.props.gaugelabel}</h3>
+            <h3 class="title with-icon gauge-title">{this.props.gaugelabel}</h3>
         );
     }
 }
@@ -160,5 +164,28 @@ class InputGaugeColumnValue3 extends Component {
 }
 
 InputGaugeColumnValue3 = connect(mappingState)(InputGaugeColumnValue3);
+
+class InputGaugeColumnLabel4 extends Component {
+    render() {
+        return (
+            <span class="caption-skill">{this.props.gaugecolumnlabel4}</span>
+        );
+    }
+}
+
+InputGaugeColumnLabel4 = connect(mappingState)(InputGaugeColumnLabel4);
+
+class InputGaugeColumnValue4 extends Component {
+    render() {
+        return (
+            <div class="pogress-point">
+                <span class="point-indicator">{this.props.gaugecolumnvalue4}%</span>
+                <div class="progress-bar-point" style={{width: this.props.gaugecolumnvalue4 + "%"}}></div>
+            </div>
+        );
+    }
+}
+
+InputGaugeColumnValue4 = connect(mappingState)(InputGaugeColumnValue4);
 
 export default Gauge2;

@@ -23,7 +23,7 @@ class Gauge1 extends Component {
                     <div class="row">
                       <div class="col-md-4">
                       <InputGaugeLabel />
-                        <div class="box-block">
+                        <div class="box-block gauge-box">
                           <ul class="list-unstyled list-skills">
                             <li class="gaugelist">
                               <InputGaugeColumnLabel1 />
@@ -57,7 +57,7 @@ Gauge1 = connect()(Gauge1);
 class InputAvatar extends Component {
     render() {
         return (
-            <img src={this.props.avatar} alt="avatar" class="avatar" />
+            <img src={this.props.avatar} alt="avatar" class="gauge-avatar" />
         );
     }
 }
@@ -67,7 +67,7 @@ InputAvatar = connect(mappingState)(InputAvatar);
 class InputName extends Component {
     render() {
         return (
-            <p>{this.props.name}</p>
+            <p class="p-name">{this.props.name}</p>
         );
     }
 }
@@ -87,7 +87,7 @@ InputTitle = connect(mappingState)(InputTitle);
 class InputGaugeLabel extends Component {
     render() {
         return (
-            <h3 class="title">{this.props.gaugelabel}</h3>
+            <h3 class="title gauge-title">{this.props.gaugelabel}</h3>
         );
     }
 }
