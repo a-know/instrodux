@@ -67,7 +67,7 @@ InputAvatar = connect(mappingState)(InputAvatar);
 class InputName extends Component {
     render() {
         return (
-            <p>{this.props.name}</p>
+            <p class="p-name">{this.props.name}</p>
         );
     }
 }
