@@ -144,6 +144,7 @@ Header Section
   display: block;
   font-size: 16px;
   letter-spacing: 3px;
+  line-height: 22px;
 }
 /* end portrait section */
 /* ======================================= 
@@ -408,7 +409,6 @@ Main Section Section
 }
 #resume .caption-skill {
   display: block;
-  margin-bottom: 5px;
 }
 #resume .list-skills li .progress {
   height: 10px;
@@ -449,9 +449,9 @@ Main Section Section
 #resume .list-points-progress li .pogress-point {
   background: url('../images/point.png') repeat-x;
   height: 20px;
-  max-width: 200px;
+  max-width: 240px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 #resume .list-points-progress li .pogress-point .point-indicator {
   position: absolute;
@@ -796,7 +796,7 @@ Main Section Section
 .img-profile,
 .identity-area,
 .box-block {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 15px;
 }
 @media (max-width: 900px) {
@@ -819,7 +819,6 @@ Main Section Section
 .body-content,
 .body-portrait {
   padding: 0 20px;
-  min-height: 350px;
   position: relative;
 }
 .body-content {

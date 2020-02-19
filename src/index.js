@@ -18,7 +18,7 @@ let introduction_state = {
     avatar: "https://secure.gravatar.com/avatar/6a9380c04ac4778efc300439707c517a?s=200&d=retro",
     name: "a-know",
     title: "Software Developer",
-    message: "趣味でWebサービスなどを作るのが好きです！\nよろしくお願いします！",
+    message: "去年まで東京に住んでいましたが、今は岡山県倉敷市に住んでいます！\nWebサービスなどを作るのを趣味でやってます！\nよろしくお願いします！",
     columnlabel1: "所属",
     columnvalue1: "株式会社はてな",
     columnlabel2: "住所",
