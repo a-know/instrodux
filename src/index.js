@@ -101,4 +101,4 @@ ReactDOM.render(<Provider store={store}><Gauge1 /></Provider>, document.getEleme
 ReactDOM.render(<Provider store={store}><Gauge2 /></Provider>, document.getElementById('dom-gauge2'));
 ReactDOM.render(<Provider store={store}><Social /></Provider>, document.getElementById('dom-social'));
 
-serviceWorker.unregister();
+serviceWorker.register();
