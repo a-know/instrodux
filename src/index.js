@@ -2,6 +2,9 @@ import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage'
+import { PersistGate } from 'redux-persist/integration/react'
 import Header from './Header'
 import Loading from './Loading'
 import Config from './Config'
@@ -88,17 +91,25 @@ function edit(state = introduction_state, action) {
     }
 }
 
-let store = createStore(edit);
+const persistConfig = {
+    key: 'instrodux',
+    storage,
+}
+
+const persistedReducer = persistReducer(persistConfig, edit)
+
+let store = createStore(persistedReducer);
+let pstore = persistStore(store);
 
 
 ReactDOM.render(<Header />, document.getElementById('dom-header'));
 ReactDOM.render(<Loading />, document.getElementById('dom-loading'));
-ReactDOM.render(<Provider store={store}><Config /></Provider>, document.getElementById('dom-config'));
-ReactDOM.render(<Provider store={store}><Basic /></Provider>, document.getElementById('dom-basic'));
-ReactDOM.render(<Provider store={store}><Business /></Provider>, document.getElementById('dom-business'));
-ReactDOM.render(<Provider store={store}><Forcus /></Provider>, document.getElementById('dom-forcus'));
-ReactDOM.render(<Provider store={store}><Gauge1 /></Provider>, document.getElementById('dom-gauge1'));
-ReactDOM.render(<Provider store={store}><Gauge2 /></Provider>, document.getElementById('dom-gauge2'));
-ReactDOM.render(<Provider store={store}><Social /></Provider>, document.getElementById('dom-social'));
+ReactDOM.render(<Provider store={store}><PersistGate loading={<p>loading...</p>} persistor={pstore}><Config /></PersistGate></Provider>, document.getElementById('dom-config'));
+ReactDOM.render(<Provider store={store}><PersistGate loading={<p>loading...</p>} persistor={pstore}><Basic /></PersistGate></Provider>, document.getElementById('dom-basic'));
+ReactDOM.render(<Provider store={store}><PersistGate loading={<p>loading...</p>} persistor={pstore}><Business /></PersistGate></Provider>, document.getElementById('dom-business'));
+ReactDOM.render(<Provider store={store}><PersistGate loading={<p>loading...</p>} persistor={pstore}><Forcus /></PersistGate></Provider>, document.getElementById('dom-forcus'));
+ReactDOM.render(<Provider store={store}><PersistGate loading={<p>loading...</p>} persistor={pstore}><Gauge1 /></PersistGate></Provider>, document.getElementById('dom-gauge1'));
+ReactDOM.render(<Provider store={store}><PersistGate loading={<p>loading...</p>} persistor={pstore}><Gauge2 /></PersistGate></Provider>, document.getElementById('dom-gauge2'));
+ReactDOM.render(<Provider store={store}><PersistGate loading={<p>loading...</p>} persistor={pstore}><Social /></PersistGate></Provider>, document.getElementById('dom-social'));
 
 serviceWorker.register();
