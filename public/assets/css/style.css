@@ -137,7 +137,7 @@ Header Section
 .portrait .name {
   font-size: 30px;
   line-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 700;
 }
 .portrait .name small {
@@ -759,7 +759,7 @@ Main Section Section
   border-bottom: 1px solid #ddd;
   position: relative;
   padding-bottom: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -796,8 +796,8 @@ Main Section Section
 .img-profile,
 .identity-area,
 .box-block {
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 @media (max-width: 900px) {
   .mini-desc {
