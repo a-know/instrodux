@@ -37,6 +37,8 @@ h1, .h1, h2, .h2, h3, .h3 {
     display: block;
     font-size: 16px;
     letter-spacing: 3px;
+    color: #000000;
+    font-weight: 700;
 }
 
 .gage2-block {
@@ -116,4 +118,9 @@ h1, .h1, h2, .h2, h3, .h3 {
 .modal-dialog {
     width: 75%;
     margin: auto;
+}
+
+body {
+    color: #000000;
+    font-weight: 600;
 }
